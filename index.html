@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="profile">
+    <div class="profile__no-auth">
+      로그인 된 사용자가 없습니다.
+      <button class="login">로그인</button>
+    </div>
+    <div class="profile__auth">
+      <img class="profile__photo" src="" alt="프로필 사진">
+      <h2 class="profile__display-name"></h2>
+      <p class="profile__email"></p>
+    </div>
+    <img>
+  </div>
+  <ul class="repo-list"></ul>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBMoOiIBTCHlBX2hr3Jo-TJGvoSYQ4krhg",
+      authDomain: "fds-firebase-test.firebaseapp.com",
+      databaseURL: "https://fds-firebase-test.firebaseio.com",
+      projectId: "fds-firebase-test",
+      storageBucket: "",
+      messagingSenderId: "671150457180"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.profile .profile__auth {
+  display: none;
+}
+
+.profile.profile--authed .profile__no-auth {
+  display: none;
+}
+
+.profile.profile--authed .profile__auth {
+  display: block;
+}
